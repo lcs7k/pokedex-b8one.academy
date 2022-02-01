@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Jefferson Klamas">
+        <meta name="description" content="Elaborado para o Projeto final do curso da https://www.b8one.academy/ de desenvolvimento Frontend, o design utilizado é de autoria de Yusting Mora contato yuxingames@gmail.com, ver projeto disponibiliado no Figma https://www.figma.com/file/CFd1USWtbpCj3gogP6FB7X/Pokemon?node-id=0%3A1 visto em 30/01/2022.">
+       
+        <title>Pokedex</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="./assets/css/style.css">
+
+    </head>
+
+    <body>
+
+        <header class="header">
+            <div class="container">
+                <div class="logo">
+                    <a href="#" class="logo-link"></a>
+                    <img src="./assets/imagens/logo-pokemon.png" alt="logo" class="logo">
+                </div>
+                <div class="search">
+                    <button class="search-button" type="submit">
+                        <img src="./assets/imagens/Search-icon.png" alt="Icone de busca" class="search-button-icon">
+                    </button>
+                    <input class="search-input" type="search" placeholder="Buscar seu pokémon">
+                </div>
+            </div>
+        </header>
+        <section class="pokemon-filter-section">
+            <div class="container">
+                <h2 class="pokemon-filter-section-title">
+                    Pokemons
+                </h2>
+                <ul class="pokemon-filter-list pokemon-filter-item-active">
+                    <li class="pokemon-filter-item">
+                        <button class="pokemon-filter-button" data-pokemon-type-name="all">
+                            All
+                        </button>
+                    </li>
+
+                    <li class="pokemon-filter-item">
+                        <button class="pokemon-filter-button" data-pokemon-type-name="bug">
+                            Bug
+                        </button>
+                    </li>
+                    <li class="pokemon-filter-item">
+                        <button class="pokemon-filter-button" data-pokemon-type-name="electric">
+                            Electric
+                        </button>
+                    </li>
+                    <li class="pokemon-filter-item">
+                        <button class="pokemon-filter-button" data-pokemon-type-name="fire">
+                            Fire
+                        </button>
+                    </li>
+                    <li class="pokemon-filter-item">
+                        <button class="pokemon-filter-button" data-pokemon-type-name="grass">
+                            Grass
+                        </button>
+                    </li>
+                    <li class="pokemon-filter-item">
+                        <button class="pokemon-filter-button" data-pokemon-type-name="normal">
+                            Normal
+                        </button>
+                    </li>
+                    <li class="pokemon-filter-item">
+                        <button class="pokemon-filter-button" data-pokemon-type-name="poison">
+                            Poison
+                        </button>
+                    </li>
+                    <li class="pokemon-filter-item">
+                        <button class="pokemon-filter-button" data-pokemon-type-name="water">
+                            Water
+                        </button>    
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <main class="pokemons">
+            <div class="container">
+                <ul class="pokemons-list">
+                </ul>
+            </div>
+        </main>
+        <script src="./js/index.js"></script>
+    </body>
+</html>
